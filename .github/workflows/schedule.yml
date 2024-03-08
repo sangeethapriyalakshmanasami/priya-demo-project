@@ -2,7 +2,9 @@ name: CI
 
 on:
   schedule:
-    - cron: '1 * * * *'
+    - cron: '*/1 * * * *' # Runs every minute
+    # Uncomment the line below to run every two minutes
+    # - cron: '*/2 * * * *'
 
 jobs:
   test:
